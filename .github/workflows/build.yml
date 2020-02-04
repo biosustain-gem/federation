@@ -9,9 +9,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Install peer installer
-      run: npm install --save-dev --ignore-scripts install-peers
     - name: Install dep
-      run: npm install
+      run: npm install --save-dev --ignore-scripts install-peers && npm install
     - name: Build
       run: npm run build
