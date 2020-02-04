@@ -10,6 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install dep
-      run: npm install --save-dev --ignore-scripts install-peers && npm install
+      run: npm install && npm install graphile-build graphile-build-pg
     - name: Build
       run: npm run build
